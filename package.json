@@ -1,0 +1,24 @@
+{
+  "name": "dashboard-with-theme-switcher",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:scss": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sa-ma/dashboard-with-theme-switcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sa-ma/dashboard-with-theme-switcher/issues"
+  },
+  "homepage": "https://github.com/sa-ma/dashboard-with-theme-switcher#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
