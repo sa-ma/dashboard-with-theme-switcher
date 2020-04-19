@@ -1,0 +1,29 @@
+.header {
+  padding: 4rem 8rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-top-bg-light-pattern;
+  @include sm {
+    padding: 4rem 2rem 12rem;
+    flex-direction: column;
+  }
+  @include md {
+    padding: 4rem 2rem 12rem;
+  }
+}
+
+.primary-header {
+  @include sm {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-light-text-saturated-blue;
+  }
+  &__main {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &__total-followers {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-light-text-saturated-blue;
+  }
+}

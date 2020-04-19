@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 400px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -14,5 +17,76 @@ body {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
-  line-height: 1.7;
-  padding: 3rem; }
+  line-height: 1.4; }
+
+.header {
+  padding: 4rem 8rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f7ff; }
+  @media (max-width: 400px) {
+    .header {
+      padding: 4rem 2rem 12rem;
+      flex-direction: column; } }
+  @media (max-width: 768px) {
+    .header {
+      padding: 4rem 2rem 12rem; } }
+
+@media (max-width: 400px) {
+  .primary-header {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #63687e; } }
+
+.primary-header__main {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.primary-header__total-followers {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #63687e; }
+
+.theme-switcher {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 400px) {
+    .theme-switcher {
+      justify-content: space-between;
+      margin-top: 2rem; } }
+  .theme-switcher__title {
+    margin-right: 10px;
+    font-size: 1.6rem;
+    color: #63687e; }
+  .theme-switcher__button {
+    position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 2.5rem; }
+    .theme-switcher__button input {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+      .theme-switcher__button input:checked + .theme-switcher__button__slider {
+        background-image: linear-gradient(to right, #378fe6, #3eda82); }
+      .theme-switcher__button input:checked + .theme-switcher__button__slider::before {
+        transform: translateX(2.3rem); }
+    .theme-switcher__button__slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #aeb3cb;
+      transition: all 0.4s;
+      border-radius: 10rem; }
+      .theme-switcher__button__slider::before {
+        position: absolute;
+        content: '';
+        height: 1.8rem;
+        width: 2rem;
+        left: 4px;
+        bottom: 4px;
+        background-color: #f5f7ff;
+        transition: all 0.4s;
+        border-radius: 10rem; }
