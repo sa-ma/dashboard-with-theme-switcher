@@ -10,3 +10,7 @@
     @content;
   }
 }
+
+@mixin social-border($color) {
+  border-top: 5px solid $color;
+}

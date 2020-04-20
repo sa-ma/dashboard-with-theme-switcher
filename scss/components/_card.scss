@@ -1,0 +1,97 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  flex-wrap: wrap;
+  @include sm {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+
+.card {
+  width: 280px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: $color-card-bg-light-pattern;
+  display: flex;
+
+  @include sm {
+    margin: 10px 0;
+    width: 100%;
+  }
+  @include md {
+    margin: 10px 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken($color-card-bg-light-pattern, 3%);
+  }
+  &-social {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    transform: translateY(-50%);
+    img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    &__header {
+      font-weight: 900;
+      font-size: 1.3rem;
+      color: $color-light-text-saturated-blue;
+    }
+    &__body {
+      text-align: center;
+      h3 {
+        font-weight: 900;
+        font-size: 6rem;
+        margin-top: 1rem;
+        color: $color-light-text-dark-blue;
+      }
+      p {
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 1.05rem;
+        font-weight: 400;
+        color: $color-light-text-saturated-blue;
+        text-transform: uppercase;
+      }
+    }
+    &__footer {
+      font-weight: 900;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+  }
+  &-facebook {
+    @include social-border($color-facebook);
+  }
+  &-twitter {
+    @include social-border($color-twitter);
+  }
+  &-instagram {
+    border: 0;
+    border-top: solid 5px transparent;
+    background-image: linear-gradient(
+        $color-card-bg-light-pattern,
+        $color-card-bg-light-pattern
+      ),
+      $color-instagram;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    &:hover {
+      background-image: linear-gradient(
+          darken($color-card-bg-light-pattern, 3%),
+          darken($color-card-bg-light-pattern, 3%)
+        ),
+        $color-instagram;
+    }
+  }
+  &-youtube {
+    @include social-border($color-youtube);
+  }
+}

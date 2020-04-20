@@ -1,5 +1,5 @@
 .header {
-  padding: 4rem 8rem 12rem;
+  padding: 4rem 8rem 16rem;
   display: flex;
   justify-content: space-between;
   background-color: $color-top-bg-light-pattern;
@@ -20,6 +20,7 @@
   &__main {
     font-size: 3rem;
     font-weight: 700;
+    color: $color-light-text-dark-blue;
   }
   &__total-followers {
     font-size: 1.4rem;
