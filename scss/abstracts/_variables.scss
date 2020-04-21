@@ -9,6 +9,11 @@ $color-instagram: linear-gradient(
   hsl(37, 97%, 70%),
   hsl(329, 70%, 58%)
 );
+$color-instagram-inverse: linear-gradient(
+  to left,
+  hsl(37, 97%, 70%),
+  hsl(329, 70%, 58%)
+);
 $color-youtube: hsl(348, 97%, 39%);
 
 // Dark Theme Toggle

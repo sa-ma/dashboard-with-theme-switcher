@@ -1,0 +1,17 @@
+.footer {
+  padding: 2rem;
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      background-image: $color-instagram;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: background-image 0.8s ease-in;
+    }
+    &:hover {
+      background-image: $color-instagram-inverse;
+    }
+  }
+}
