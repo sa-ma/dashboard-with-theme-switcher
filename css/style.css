@@ -20,11 +20,25 @@ body {
   font-size: 1.6rem;
   line-height: 1.4; }
 
+.secondary-header {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #63687e; }
+
+footer {
+  text-align: center; }
+
 .u-status-success {
   color: #1db489; }
 
 .u-status-error {
   color: #dc414c; }
+
+.u-margin-left-big {
+  margin-left: 8rem; }
+
+.u-translate-big {
+  margin-top: -13rem; }
 
 .header {
   padding: 4rem 8rem 16rem;
@@ -132,7 +146,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    transform: translateY(-50%); }
+    margin-bottom: 2rem; }
     .card-social img {
       vertical-align: middle;
       margin-right: 5px; }
@@ -158,6 +172,31 @@ body {
       font-weight: 900;
       margin-top: 20px;
       font-size: 1.2rem; }
+  .card-overview {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-bottom: 2rem; }
+    .card-overview img {
+      vertical-align: middle;
+      object-fit: none; }
+    .card-overview__header, .card-overview__body {
+      display: flex;
+      justify-content: space-between; }
+    .card-overview__header-title {
+      color: #63687e;
+      font-weight: 900;
+      font-size: 1.3rem; }
+    .card-overview__body {
+      margin-top: 2rem; }
+      .card-overview__body-title {
+        font-size: 4rem;
+        font-weight: 900; }
+      .card-overview__body-status {
+        font-size: 1.3rem;
+        font-weight: 900;
+        align-self: flex-end;
+        padding-bottom: 1rem; }
   .card-facebook {
     border-top: 5px solid deepskyblue; }
   .card-twitter {
