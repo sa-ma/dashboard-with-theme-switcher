@@ -2,7 +2,7 @@
   padding: 4rem 8rem 16rem;
   display: flex;
   justify-content: space-between;
-  background-color: $color-top-bg-light-pattern;
+  background-color: var(--top-bg-pattern);
   @include sm {
     padding: 4rem 2rem 12rem;
     flex-direction: column;
@@ -15,16 +15,16 @@
 .primary-header {
   @include sm {
     padding-bottom: 2rem;
-    border-bottom: 1px solid $color-light-text-saturated-blue;
+    border-bottom: 1px solid var(--text-primary);
   }
   &__main {
     font-size: 3rem;
     font-weight: 700;
-    color: $color-light-text-dark-blue;
+    color: var(--text-secondary);
   }
   &__total-followers {
     font-size: 1.4rem;
     font-weight: 700;
-    color: $color-light-text-saturated-blue;
+    color: var(--text-primary);
   }
 }

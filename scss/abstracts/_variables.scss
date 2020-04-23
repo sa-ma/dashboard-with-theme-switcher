@@ -49,3 +49,30 @@ $color-light-text-dark-blue: hsl(230, 17%, 14%);
 // Breakpoints
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 499px;
+
+// Light theme
+
+:root {
+  --color-toogle: hsl(230, 22%, 74%);
+  --bg: hsl(0, 0%, 100%);
+  --top-bg-pattern: hsl(225, 100%, 98%);
+  --bg-pattern: hsl(227, 47%, 96%);
+  --text-primary: hsl(228, 12%, 44%); //primary text color
+  --text-secondary: hsl(230, 17%, 14%);
+  --card-hover: #eceef9;
+}
+
+// Dark Theme
+.dark {
+  --color-toogle: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  --bg: hsl(230, 17%, 14%);
+  --top-bg-pattern: hsl(232, 19%, 15%);
+  --bg-pattern: hsl(228, 28%, 20%);
+  --text-primary: hsl(228, 34%, 66%); //primary text color
+  --text-secondary: hsl(0, 0%, 100%); // secondary text color
+  --card-hover: #303550;
+}

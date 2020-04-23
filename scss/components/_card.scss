@@ -14,7 +14,7 @@
   width: 280px;
   text-align: center;
   border-radius: 6px;
-  background-color: $color-card-bg-light-pattern;
+  background-color: var(--bg-pattern);
   display: flex;
 
   @include sm {
@@ -27,7 +27,7 @@
 
   &:hover {
     cursor: pointer;
-    background-color: darken($color-card-bg-light-pattern, 3%);
+    background-color: var(--card-hover);
   }
   &-social {
     flex-direction: column;
@@ -42,7 +42,7 @@
     &__header {
       font-weight: 900;
       font-size: 1.3rem;
-      color: $color-light-text-saturated-blue;
+      color: var(--text-primary);
     }
     &__body {
       text-align: center;
@@ -50,14 +50,14 @@
         font-weight: 900;
         font-size: 6rem;
         margin-top: 1rem;
-        color: $color-light-text-dark-blue;
+        color: var(--text-secondary);
       }
       p {
         font-size: 1rem;
         text-align: center;
         letter-spacing: 1.05rem;
         font-weight: 400;
-        color: $color-light-text-saturated-blue;
+        color: var(--text-primary);
         text-transform: uppercase;
       }
     }
@@ -83,7 +83,7 @@
     }
     &__header {
       &-title {
-        color: $color-light-text-saturated-blue;
+        color: var(--text-primary);
         font-weight: 900;
         font-size: 1.3rem;
       }
@@ -93,6 +93,7 @@
       &-title {
         font-size: 4rem;
         font-weight: 900;
+        color: var(--text-secondary);
       }
       &-status {
         font-size: 1.3rem;
@@ -111,18 +112,12 @@
   &-instagram {
     border: 0;
     border-top: solid 5px transparent;
-    background-image: linear-gradient(
-        $color-card-bg-light-pattern,
-        $color-card-bg-light-pattern
-      ),
+    background-image: linear-gradient(var(--bg-pattern), var(--bg-pattern)),
       $color-instagram;
     background-origin: border-box;
     background-clip: padding-box, border-box;
     &:hover {
-      background-image: linear-gradient(
-          darken($color-card-bg-light-pattern, 3%),
-          darken($color-card-bg-light-pattern, 3%)
-        ),
+      background-image: linear-gradient(var(--card-hover), var(--card-hover)),
         $color-instagram;
     }
   }

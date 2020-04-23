@@ -8,7 +8,7 @@
   &__title {
     margin-right: 10px;
     font-size: 1.6rem;
-    color: $color-light-text-saturated-blue;
+    color: var(--text-secondary);
   }
   &__button {
     position: relative;
@@ -21,7 +21,7 @@
       width: 0;
       height: 0;
       &:checked + .theme-switcher__button__slider {
-        background-image: $color-toggle-dark;
+        background: var(--color-toogle);
       }
       &:checked + .theme-switcher__button__slider::before {
         transform: translateX(2.3rem);
@@ -34,7 +34,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: $color-toggle-light;
+      background: var(--color-toogle);
       transition: all 0.4s;
       border-radius: 10rem;
       &::before {
@@ -44,7 +44,7 @@
         width: 2rem;
         left: 4px;
         bottom: 4px;
-        background-color: $color-top-bg-light-pattern;
+        background-color: var(--top-bg-pattern);
         transition: all 0.4s;
         border-radius: 10rem;
       }
