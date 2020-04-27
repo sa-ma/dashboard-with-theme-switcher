@@ -42,9 +42,6 @@ html {
 body {
   box-sizing: border-box;
   background-color: var(--bg);
-}
-
-body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -113,6 +110,36 @@ footer {
   color: var(--text-primary);
 }
 
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 499px) {
+  .card-container {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+}
+
+.footer {
+  padding: 2rem;
+}
+.footer__link:link,
+.footer__link:visited {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-image 0.8s ease-in;
+}
+.footer__link:hover {
+  background-image: linear-gradient(to left, #fdc468, #df4996);
+}
+
 .theme-switcher {
   display: flex;
   align-items: center;
@@ -169,20 +196,6 @@ footer {
   background-color: var(--top-bg-pattern);
   transition: all 0.4s;
   border-radius: 10rem;
-}
-
-.card-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 8rem;
-  flex-wrap: wrap;
-}
-@media (max-width: 499px) {
-  .card-container {
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
 }
 
 .card {
@@ -299,20 +312,4 @@ footer {
 }
 .card-youtube {
   border-top: 5px solid #c4032a;
-}
-
-.footer {
-  padding: 2rem;
-}
-.footer__link:link,
-.footer__link:visited {
-  text-decoration: none;
-  background-image: linear-gradient(to right, #fdc468, #df4996);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: background-image 0.8s ease-in;
-}
-.footer__link:hover {
-  background-image: linear-gradient(to left, #fdc468, #df4996);
 }

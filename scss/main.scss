@@ -1,13 +1,4 @@
-@import './abstracts/functions';
-@import './abstracts/mixins';
-@import './abstracts/variables';
-
-@import './base/base';
-@import './base/typography';
-@import './base/utilities';
-@import './base/animations';
-
-@import './components/header';
-@import './components/theme-switcher';
-@import './components/card';
-@import './components/footer';
+@import './variables';
+@import './base';
+@import './layout';
+@import './component';
